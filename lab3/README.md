@@ -1,7 +1,7 @@
 # FedML
 
 
-### lab3 standalong
+### lab3 standalong : 50 clients and 200 rounds
 ```
 # Download dataset
 python3 create_femnist.py
@@ -21,7 +21,27 @@ python3 lab3.py \
 --seed 123
 ```
 
-### lab3 rpc
+### lab3 standalong : 4 clients and 200 rounds
+```
+# Download dataset
+python3 create_femnist.py
+
+python3 lab3.py \
+--wandb_name fedavg_femnist_r20_test1 \
+--gpu 0 \
+--client_num_in_total 4 \
+--client_num_per_round 4 \
+--comm_round 200 \
+--frequency_of_the_test 1 \
+--epochs 1 \
+--batch_size 16 \
+--client_optimizer adam \
+--lr 0.001 \
+--ci 1 \
+--seed 123
+```
+
+### lab3 rpc : 4 clients and 200 rounds
 ```
 WORKER_IDX=0
 
