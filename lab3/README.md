@@ -64,3 +64,13 @@ python3 lab3_rpc.py \
 --ci 1 \
 --fl_worker_index "$WORKER_IDX"
 ```
+
+```
+e.g.
+--fl_worker_index "0"             <--- this is on server terminal
+
+--fl_worker_index "1"             <--- this is on 1st client terminal
+--fl_worker_index "2"             <--- this is on 2nd client terminal
+--fl_worker_index "3"             <--- this is on 3rd client terminal
+--fl_worker_index "4"             <--- this is on 4th client terminal
+```
